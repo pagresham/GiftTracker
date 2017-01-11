@@ -1,10 +1,2 @@
-All Better!
-1
-2
-2
-3
-3
-3
-3
-4
-4
+# gift__tracker - a simple web app to practice various ideas
+# Local Storage, etc.
