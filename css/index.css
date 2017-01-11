@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* Start css Reset */
+/*
+  The code below has been extracted from the following projects:
+  - https://github.com/murtaugh/HTML5-Reset
+  - http://meyerweb.com
+  - http://html5doctor.com
+  - http://html5boilerplate.com
+  … and then cleaned up a lot.
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+code,
+em,
+img,
+small,
+strong,
+sub,
+sup,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  vertical-align: baseline;
+  background: transparent; }
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+img,
+object {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+input,
+select {
+  vertical-align: middle; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+strong {
+  font-weight: bold; }
+
+.pointer,
+label,
+input[type="file"],
+button {
+  cursor: pointer; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  border: 0; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* End Reset */
+body {
+  max-width: 60em;
+  margin: auto;
+  background-color: #111; }
+
+.page {
+  /*height: 400px;
+  width: 400px;*/
+  height: 667px;
+  margin: auto;
+  background: url(../img/cover-iphone6.jpg);
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  background-color: green;
+  /*z-index: 0;*/
+  position: relative;
+  background-size: contain; }
+
+.tag {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 50%; }
+
+#test {
+  height: 10px;
+  background-color: yellow; }
+
+@media only screen and (min-width: 376px) and (max-width: 766px) {
+  .page {
+    background: url(../img/cover-ipad.jpg);
+    height: 1024px; } }
+@media only screen and (min-width: 767px) {
+  .page {
+    background: url(../img/cover-960x.jpg);
+    height: 1024px; } }
+body {
+  max-width: 60em; }
+
+select {
+  font-size: inherit; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,72 @@
+// alert("hi")
+
+function person(name, age, ideas) {
+	this.name = name;
+	this.age = age;
+	this.ideas = ideas;
+	this.show = function() {
+		document.write(this.name+"  </br>");
+		document.write(this.age+"   </br>");
+		document.write("Gift Ideas:  "+"   </br>");
+		for (var i in this.ideas) {
+			var num = Number(i)+1;
+			document.write(num+".  "+this.ideas[i]+"   </br>");
+		}
+	}
+}
+
+function personDiv(person) {
+	
+	var slate = document.getElementById("demo");
+	for (var prop in person) {
+		var div = document.createElement("div");
+		slate.appendChild(div);
+		var text = person[prop];
+		div.innerHTML = text;
+		
+	}
+}
+
+var robin = new person("Robin Gresham", 38, ["coffee", "good sex", "hugs from the kids"]);
+
+
+if (typeof(localStorage) !== null) {
+	localStorage.myName = "Pierce Gresham";
+} 
+var demo_text = document.getElementById("demo");
+//demo_text.innerHTML = localStorage.myName;
+
+//var person = {name:"pierce",  age:42, ideas: ["planes", "trains", "automobiles"]};
+//localStorage.user = person;
+//demo_text.innerHTML = person[0].name +"  "+ person.age;
+
+person.showPerson = function() {
+	document.write(person.name+"  </br>");
+	document.write(person.age+"   </br>");
+	document.write("Gift Ideas:  "+"   </br>");
+	for (var i in person.ideas) {
+		var num = Number(i)+1;
+		document.write(num+".  "+person.ideas[i]+"   </br>");
+	}
+
+}
+
+person.showIdeas = function() {
+	for (var i in person.ideas) {
+		document.write(person.ideas[i]+"  </br>");
+	}
+}
+
+//person.height = "60in";
+//var ht = person.height;
+//console.log(ht);
+
+// person.showIdeas();
+//robin.showPerson();
+//localStorage.personObj = person;
+//var me = localStorage.personObj;
+//robin.show();
+personDiv(robin);
+//localStorage.name = "fred";
+//localStorage.clear();
+//alert(localStorage.name)

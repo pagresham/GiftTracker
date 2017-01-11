@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* Start css Reset */
+/*
+  The code below has been extracted from the following projects:
+  - https://github.com/murtaugh/HTML5-Reset
+  - http://meyerweb.com
+  - http://html5doctor.com
+  - http://html5boilerplate.com
+  … and then cleaned up a lot.
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+code,
+em,
+img,
+small,
+strong,
+sub,
+sup,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  vertical-align: baseline;
+  background: transparent; }
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+img,
+object {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+input,
+select {
+  vertical-align: middle; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+strong {
+  font-weight: bold; }
+
+.pointer,
+label,
+input[type="file"],
+button {
+  cursor: pointer; }
+
+/* End Reset */
+h1 {
+  font-size: 2em;
+  font-family: "Bad Script", sans-serif; }
+
+h2 {
+  font-size: 1.5em; }
+
+body {
+  background-color: maroon;
+  max-width: 960px;
+  font: 1em/1.5em  sans-serif;
+  line-height: 1.5;
+  margin: auto;
+  z-index: -2; }
+
+header {
+  min-height: 3em;
+  text-align: center;
+  padding: .5em; }
+
+input {
+  margin: 1em; }
+
+input[type='button'] {
+  margin-top: .5em; }
+
+#remove_list_btn {
+  margin-top: 1em; }
+
+nav {
+  background-color: black;
+  border-top: 2px solid silver;
+  clear: both; }
+
+nav,
+.drop-nav {
+  background: #626E64; }
+
+nav:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+nav a {
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none; }
+
+nav > a {
+  display: block; }
+
+nav > li {
+  border-left: 1px solid silver;
+  float: left; }
+
+nav li:first-child {
+  border-left: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+fieldset {
+  margin-bottom: 1em; }
+
+.page {
+  margin: 1em;
+  padding-bottom: .5em;
+  background-color: darkgreen;
+  border: 2px solid #BAA73C;
+  border-radius: 1em;
+  position: relative; }
+
+.list_box1 {
+  margin: 1em 1em;
+  padding: .6em;
+  border: 2px solid #BAA73C;
+  border-radius: 1em;
+  background-color: #ccc; }
+
+.list_box2 {
+  margin: 1em 1em;
+  padding: .6em;
+  border: 2px solid #BAA73C;
+  border-radius: 1em;
+  background-color: #ccc; }
+
+.remove-item-btn {
+  float: right;
+  background-color: white; }
+
+.dropdown {
+  position: relative; }
+
+.dropdown:after {
+  content: "\25BC";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 12%;
+  color: silver; }
+
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none; }
+
+.dropdown li {
+  border-bottom: 1px solid silver; }
+
+.dropdown li:first-child {
+  border-top: 1px solid silver; }
+
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block; }
+
+.flyout-nav {
+  left: 100%;
+  top: 0; }
+
+.flyout:hover a,
+.flyout-nav {
+  background: #395066; }
+
+.drop-nav li:hover {
+  background-color: #545E56; }
+
+.list_box p {
+  display: block;
+  margin: 5px 0; }
+
+input {
+  margin: 0; }
+
+.display {
+  font-family: "Kalam";
+  background-color: rgba(244, 240, 138, 0.63); }
+
+.name {
+  font: 2em/1em "Kalam";
+  color: maroon;
+  text-shadow: 2px 2px 5px darkgreen;
+  display: block;
+  margin: .2em 0; }
+
+.add_button {
+  margin-bottom: .5em; }
+
+.input_text {
+  background-color: rgba(244, 240, 138, 0.63); }
+
+.board {
+  width: 80%;
+  min-height: 2em;
+  border: 2px solid #888;
+  border-radius: .5em;
+  padding: .5em;
+  background-color: rgba(244, 240, 138, 0.63);
+  box-shadow: 5px 5px 10px;
+  font: bolder 1.5em "Bad Script"; }
+
+.small {
+  font-size: .7em; }
+
+.santa {
+  position: absolute;
+  z-index: -1; }
+
+@keyframes simple_cross {
+  0% {
+    top: 80%;
+    left: -60%; }
+  49% {
+    top: 80%;
+    left: 160%;
+    transform: scaleX(1); }
+  50% {
+    transform: scaleX(-1);
+    filter: FlipH; }
+  100% {
+    top: 80%;
+    left: -60%;
+    transform: scaleX(-1); } }
+@keyframes cross {
+  0% {
+    top: 0%;
+    left: -40%; }
+  25% {
+    top: 25%;
+    left: 100%;
+    transform: rotate(0deg); }
+  50% {
+    top: 50%;
+    left: -40%;
+    transform: rotate(360deg); }
+  75% {
+    top: 75%;
+    left: 100%;
+    transform: rotate(360deg); }
+  100% {
+    top: 100%;
+    left: -40%; } }
+@media only screen and (min-width: 343px) {
+  #add_idea {
+    margin-left: 1em; } }
+
+/*# sourceMappingURL=gt.css.map */
