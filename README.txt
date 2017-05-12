@@ -1,2 +1,2 @@
 # gift__tracker - a simple web app to practice various ideas
-# Local Storage, etc.
+# Local Storage and arrays
